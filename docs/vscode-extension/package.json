@@ -1,0 +1,25 @@
+{
+  "name": "cyone",
+  "displayName": "cyone",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.92.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "cyone",
+      "aliases": ["cyone", "cyone"],
+      "extensions": [".cy"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "cyone",
+      "scopeName": "source.cyone",
+      "path": "./syntaxes/cyone.tmLanguage.json"
+    }]
+  }
+}

@@ -1,0 +1,68 @@
+{
+    "scopeName": "source.cyone",
+    "patterns": [
+        {
+            "name": "comment.block.cyone",
+            "begin": "/\\*",
+            "end": "\\*/",
+            "patterns": [
+                {
+                    "name": "comment.block.documentation.cyone",
+                    "begin": "/\\*\\*",
+                    "end": "\\*/",
+                    "patterns": [
+                        {
+                            "name": "comment.block.documentation.tag.cyone",
+                            "match": "\\s+\\*\\s+@[A-Za-z]+"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "comment.line.double-slash.cyone",
+            "match": "//.*"
+        },
+        {
+            "name": "keyword.control.cyone",
+            "match": "\\b(loc|at|start|block|mem|if|else|goto|call|to)\\b"
+        },
+        {
+            "name": "keyword.operator.cyone",
+            "match": "\\b(\\+|\\-|\\*|\\/|\\=|\\>|\\<|\\!\\=|\\==)\\b"
+        },
+        {
+            "name": "constant.numeric.hex.cyone",
+            "match": "\\b0x[0-9A-Fa-f]+\\b"
+        },
+        {
+            "name": "variable.other.cyone",
+            "match": "\\b(x|y|z|resultado|flag|temp)\\b"
+        },
+        {
+            "name": "keyword.control.goto.cyone",
+            "match": "\\bgoto\\b"
+        },
+        {
+            "name": "keyword.control.call.cyone",
+            "match": "\\bcall\\b"
+        },
+        {
+            "name": "keyword.control.if.cyone",
+            "match": "\\bif\\b"
+        },
+        {
+            "name": "keyword.control.else.cyone",
+            "match": "\\belse\\b"
+        },
+        {
+            "name": "constant.other.memory.cyone",
+            "match": "\\bmem\\b"
+        },
+        {
+            "name": "constant.other.memory-address.cyone",
+            "match": "\\b0x[0-9A-Fa-f]{4}\\b"
+        }
+    ],
+    "repository": {}
+}
